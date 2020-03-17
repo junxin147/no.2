@@ -31,7 +31,6 @@ public class MyActionListener implements ActionListener {
 			t = new Thread(ar);
 			t.start();
 			System.out.println(ar.getServerSocket());
-
 			Businessframe.getOpen().setEnabled(false);
 			Businessframe.getClose().setEnabled(true);
 			Businessframe.repaint();
@@ -62,7 +61,6 @@ public class MyActionListener implements ActionListener {
 					Businessframe.getTextArea1().append("\r\n");
 					Businessframe.getTextArea1().setEditable(false);
 				}
-
 				ar.getServerSocket().close();
 				t.interrupt();
 

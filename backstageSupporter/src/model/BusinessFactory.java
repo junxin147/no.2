@@ -83,14 +83,12 @@ public class BusinessFactory {
 				
 				
         case "close":
-		    
 			if (msgArr[1].equals("success"))
 			{
 				//第四次握手
 				cr.clientClose();
 				//关闭窗口
 			}
-			
 			break;
 		//	ar.getSr().sengMsg("closesever://serverclosesuccess");	
      case "closesever":

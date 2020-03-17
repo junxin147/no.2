@@ -108,7 +108,6 @@ public class Business {
 			}
 			//第三次握手  自己关闭
 			sr.close();
-
 			break;
 			//cr.sendMsg("queryrefresh://"+tb_User.toString());
 		case "queryrefresh":
@@ -631,7 +630,6 @@ public class Business {
 		tb_UserMsg.setCurrentPage(currentPage);
 		tb_UserMsg.setArray(arra1);
 		reg = "next://" + tb_UserMsg.toString();
-
 		return reg;
 
 	}
